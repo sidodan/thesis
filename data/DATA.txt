@@ -1,0 +1,2 @@
+Example of Twitter Data stored in the normalized Gnip Activity Streams format:
+http://support.gnip.com/sources/twitter/data_format.html
