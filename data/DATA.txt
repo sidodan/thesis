@@ -1,2 +1,0 @@
-This folder contains the raw twitter data, stored in normalized Gnip Activity Streams format.
-Further explanation and list of fields can be found at: http://support.gnip.com/sources/twitter/data_format.html
