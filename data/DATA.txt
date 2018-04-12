@@ -1,1 +1,2 @@
-Example of Twitter Data
+This folder contains a small subset of the raw twitter data used in this research, stored in normalized Gnip Activity Streams format.
+Further explanation and list of fields can be found at: http://support.gnip.com/sources/twitter/data_format.html
