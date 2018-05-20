@@ -1,1 +1,1 @@
-Place here the examples you with to evaluate
+Place in this folder all TEST examples you wish to classify

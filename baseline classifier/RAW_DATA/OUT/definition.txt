@@ -1,0 +1,1 @@
+An output folder for the Baseline Classifier

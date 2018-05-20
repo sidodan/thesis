@@ -12,7 +12,7 @@ final_path = 'TEST'
 # final_path = 'SEED'
 # final_path = 'RANDOM'
 
-# out_file contains a concatinated file for all tweets.
+# out_file contains a concatenated file for all tweets.
 out_file = open(output_path + '/' + 'out.txt', 'w')
 # users_file is basically a user column contains all users we with to classify
 users_file = open(output_path + '/' + 'users.txt', 'w')

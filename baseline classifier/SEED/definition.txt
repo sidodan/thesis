@@ -1,1 +1,1 @@
-Place here positive examples for classification
+Place in this folder all positive examples for classification

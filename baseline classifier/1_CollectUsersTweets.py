@@ -1,3 +1,5 @@
+# This script collects all tweet posted by the users you wish to examine
+# Before running this script, please make sure you have the list of users.
 import os
 import sys
 import unicodedata
@@ -6,9 +8,9 @@ import re
 
 
 # Data Path
-TWITTER_STREAM_FILE_PATH = "../data/*"
+TWITTER_STREAM_FILE_PATH = "../twitter_data/*"
 # Users file
-USERS_FILE_PATH = "UsersToEvaluate.txt"
+USERS_FILE_PATH = "../input/users_files/orig/users_for_Classification.txt"
 # Output Path
 OUTPUT_FOLDER_PATH = "RAW_DATA/S3_DATA"
 
@@ -23,6 +25,7 @@ def spark_initiator():
 	conf = SparkConf().setAppName("UsersTweets")
 	sc_object = SparkContext(conf=conf)
 	return sc_object
+
 
 # load users list
 def load_users(rdd):
@@ -44,6 +47,7 @@ def ignore(s):
 	text = text.lower()
 	return text
 
+	
 # read data
 def read(line):
 	try:
@@ -53,7 +57,6 @@ def read(line):
 
 # print tweets for specific users
 def flat_mapper(row):
-
 	try:
 		if 'body' in row and 'actor' in row:
 			name = str(ignore(row['actor']['preferredUsername']))
