@@ -114,7 +114,9 @@ for dirname in dirnames:
             train_file.write(filename.split('.')[0] + '\t' + dirname + '\n')
         else:
             x_test.append(feature_vector)
-            test_file.write(str(c) + '\t' + filename.split('.')[0] + '\t' + dirname + '\n')
+			# comment out the below code in case you have labeled data, i.e. y_test labels.
+            # y_test.append(dirname)
+			test_file.write(str(c) + '\t' + filename.split('.')[0] + '\t' + dirname + '\n')
             test_filenames.append(filename.split('.')[0])
             c = c + 1
 
@@ -137,6 +139,8 @@ acc_file.close()
 current_time = datetime.datetime.now().time()
 print 'End Classification: ' + current_time.isoformat()
 
+# comment out the below code in case you have labeled data, i.e. y_test labels. 
+'''
 acc = 0
 TotalNoTestSamples = len(z_test)
 # Seeds are positive examples, while Random are negative
@@ -176,3 +180,4 @@ acc_file.close()
 current_time = datetime.datetime.now().time()
 print 'End Classification: ' + current_time.isoformat()
 
+'''

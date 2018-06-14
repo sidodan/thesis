@@ -9,7 +9,7 @@ import re
 
 INPUT_FILE_PATH = "../subgraphs/data/all"
 OUTPUT_FOLDER_PATH = "../subgraphs/data/red"
-SEED_FILE_PATH = "../input/users_files/orig/subpopulation_users_list.txt"
+SEED_FILE_PATH = "../input/users_files/orig/subpopulation_users.txt"
 
 __seeds__ = {}
 
